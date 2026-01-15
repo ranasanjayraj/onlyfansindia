@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+        }
+
+        /* Fullscreen image container */
+        .container {
+            width: 100%;
+            height: 100%;
+            background-image: url('image.jpg');
+            background-size: cover;      /* Maintain aspect ratio */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* Contact text */
+        .contact {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            color: #ffffff;
+            font-size: 14px;
+            opacity: 0.85;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            .contact {
+                font-size: 12px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="contact">
+            Contact: ranasanjayraj101@gmail.com
+        </div>
+    </div>
+
+</body>
+</html>
